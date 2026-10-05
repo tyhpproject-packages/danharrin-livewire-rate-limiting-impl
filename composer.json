@@ -1,0 +1,63 @@
+{
+    "name": "tyhpdef/danharrin-livewire-rate-limiting-impl",
+    "description": "Implementation package for tyhpdef/danharrin-livewire-rate-limiting. Require tyhpdef/danharrin-livewire-rate-limiting, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "2.3.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/illuminate-support": "@dev",
+                "tyhpdef/symfony-http-kernel": "@dev",
+                "tyhpdef/symfony-http-foundation": "@dev",
+                "tyhpdef/symfony-event-dispatcher": "@dev",
+                "tyhpdef/symfony-event-dispatcher-contracts": "@dev",
+                "tyhpdef/symfony-service-contracts": "@dev",
+                "tyhpdef/symfony-error-handler": "@dev",
+                "tyhpdef/symfony-var-dumper": "@dev",
+                "tyhpdef/psr-clock": "@dev",
+                "tyhpdef/psr-event-dispatcher": "@dev",
+                "tyhpdef/php-ext-session": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/danharrin-livewire-rate-limiting"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "danharrin/livewire-rate-limiting": "2.3.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/illuminate-support": "@dev",
+        "tyhpdef/symfony-http-kernel": "@dev",
+        "tyhpdef/symfony-http-foundation": "@dev",
+        "tyhpdef/symfony-event-dispatcher": "@dev",
+        "tyhpdef/symfony-event-dispatcher-contracts": "@dev",
+        "tyhpdef/symfony-service-contracts": "@dev",
+        "tyhpdef/symfony-error-handler": "@dev",
+        "tyhpdef/symfony-var-dumper": "@dev",
+        "tyhpdef/psr-clock": "@dev",
+        "tyhpdef/psr-event-dispatcher": "@dev",
+        "tyhpdef/php-ext-session": "@dev"
+    }
+}
